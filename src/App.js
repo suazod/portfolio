@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <span className="danny_suazo">ds - updated</span>
         </a>
       </header>
     </div>
