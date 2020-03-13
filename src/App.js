@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="danny_suazo">ds - updated</span>
+          <span className="danny_suazo">ds - updated </span>
         </a>
       </header>
     </div>
