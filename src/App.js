@@ -1,24 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import Welcome from './containers/Welcome';
 import './App.css';
-
+//const mainBg = { backgroundImage: 'url(' + require('./styles/images/main.png') + ')', backgroundRepeat: 'no-repeat', backgroundSize:'cover' };
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="danny_suazo">ds - updated now Danny & Nilima </span>
-        </a>
-      </header>
+        <Welcome/>
     </div>
   );
 }
