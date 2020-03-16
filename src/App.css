@@ -95,6 +95,10 @@ header .overlay {
   .nameLogo .lname {
     font-weight: 900;
     font-style: italic; }
+    .nameLogo .lname a {
+      color: white; }
+      .nameLogo .lname a:hover {
+        text-decoration: none; }
 
 .w-100.text-white {
   position: relative; }
@@ -325,21 +329,84 @@ header .overlay {
 .d-flex {
   position: relative; }
 
-.work-projects a {
+.work-projects .link--bravoo {
   font-size: 50px;
   font-weight: 900;
   font-style: italic;
   color: white;
   text-decoration: none;
-  margin: 0 45px; }
+  margin: 0 45px;
+  cursor: default; }
 
 .work-title {
   color: white; }
+  .work-title p {
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 50px; }
 
 .logos {
   position: absolute;
   bottom: -180px;
   left: -180px; }
+
+.nav-contact {
+  color: white; }
+  .nav-contact:hover {
+    color: white; }
+
+/* bravoo */
+/* bravoo */
+.link--bravoo {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  display: inline-block;
+  position: relative; }
+
+.link--bravoo:hover {
+  color: #0077ff; }
+
+.link--bravoo::before {
+  content: "";
+  position: absolute;
+  height: 38px;
+  width: 100%;
+  top: 50%;
+  margin-top: -11px;
+  left: -1%;
+  z-index: -1;
+  background: #f9f9f9;
+  -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(0, 1, 1);
+  transform: rotate3d(0, 0, 1, 45deg) scale3d(0, 1, 1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  opacity: 0.1; }
+
+.link--bravoo:hover::before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+  transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1); }
+
+.link--bravoo span {
+  font-size: 30%;
+  font-weight: 400;
+  margin-left: 10px;
+  position: absolute;
+  right: 5px;
+  color: lawngreen;
+  bottom: -9px;
+  opacity: 0;
+  -webkit-transform: translate3d(-10px, -10px, 0);
+  transform: translate3d(-10px, -10px, 0);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s; }
+  .link--bravoo span a {
+    color: white;
+    cursor: pointer; }
+
+.link--bravoo:hover span {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
 
 /*media queries*/
 @media (max-width: 576px) {

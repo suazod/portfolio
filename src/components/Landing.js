@@ -50,12 +50,28 @@ class Welcome extends Component {
                                         Focused on Web Design, Graphic Design, Advertising & Marketing</p>
                                     </div>
                                     <div className={workShow}>
-                                        <p>Current projects in the works</p>
+                                        <p>Few projects I'm currently working on..</p>
                                         <div className="row no-gutters">
                                             <div className="col-12 work-projects">
-                                                <a href="#" target="_blank">Bravoo</a>
-                                                <a href="#" target="_blank">Audio Buzz</a>
-                                                <a href="#" target="_blank">Petential</a>
+                                                <span className="link--bravoo">Bravoo
+                                                    <span>
+                                                        <a href="https://bravoo.herokuapp.com/" target="_blank" rel="noopener noreferrer">See App</a> | <a href="https://github.com/suazod/bravoo" target="_blank" rel="noopener noreferrer">See Code</a>
+                                                    </span>
+                                                </span>
+
+                                                <span className="link--bravoo">Audio Buzz
+                                                    <span>
+                                                        <a href="https://gboyce.github.io/audiobuzz/" target="_blank" rel="noopener noreferrer">See App</a> | <a href="https://github.com/gboyce/audiobuzz" target="_blank" rel="noopener noreferrer">See Code</a>
+                                                    </span>
+                                                </span>
+
+                                                <span className="link--bravoo">Petential
+                                                    <span>
+                                                        <a href="https://stormy-stream-36757.herokuapp.com/" target="_blank" rel="noopener noreferrer">See App</a> | <a href="https://github.com/suazod/petential" target="_blank" rel="noopener noreferrer">See Code</a>
+                                                    </span>
+                                                </span>
+                                                {/* <a href="https://gboyce.github.io/audiobuzz/" target="_blank">Audio Buzz</a>
+                                                <a href="https://stormy-stream-36757.herokuapp.com/" target="_blank">Petential</a> */}
                                             </div>
                                         </div>
                                     </div>

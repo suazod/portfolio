@@ -15,12 +15,12 @@ class Navigation extends Component {
             <div className="navigational">
                 <div className="row justify-content-between no-gutters">
                     <div className="col-2 nameLogo">
-                        <span className="lname">Suazo<span className="fname">.</span></span>
+                        <span className="lname"><a href="/">Suazo<span className="fname">.</span></a></span>
                     </div>
                     <div className="col-6 nav-links">
                         <span onClick={this.handleActiveLink.bind(this,'active-about')}>About</span> 
                         <span onClick={this.handleActiveLink.bind(this,'active-work')}>Work</span> 
-                        <span>Contact</span>
+                        <a className="nav-contact" href="mailto:dannysuazor@yahoo.com"><span>Contact</span></a>
                     </div>
                 </div>
             </div>
