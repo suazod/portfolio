@@ -8,11 +8,11 @@ class Welcome extends Component {
 
         };
     }
-    componentDidMount() {
-        const video = document.querySelector("video");
-        // Slow it to 50% speed
-        video.playbackRate = 0.8;
-    }
+    // componentDidMount() {
+    //     //const video = document.querySelector("video");
+    //     // Slow it to 50% speed
+    //     //video.playbackRate = 0.8;
+    // }
 
     render() {
         const slideOut = this.props.activeLink === 'active-about' || this.props.activeLink === 'active-work' ? ' fade-out' : 'fade-in';
