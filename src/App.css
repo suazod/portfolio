@@ -1,5 +1,6 @@
 * {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  color: #fff; }
 
 .App {
   text-align: center;
@@ -7,8 +8,78 @@
   overflow: hidden;
   position: relative; }
 
+.extra-padder {
+  padding-right: 5vw;
+  padding-left: 5vw; }
+
+.container-fluid {
+  padding-top: 150px; }
+
+.the-container {
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden; }
+
+.navbar {
+  padding: 0.8rem 1rem;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); }
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.81) !important;
+  border-bottom: 1px solid #333; }
+
+.nav-item a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 14px;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer; }
+  .nav-item a:hover {
+    color: #0077ff; }
+
 .App-logo {
   pointer-events: none; }
+
+body {
+  background-color: black; }
+
+.img-border {
+  border: 28px solid #191919;
+  margin-bottom: 50px; }
+
+.padder-top {
+  padding-top: 25px; }
+
+.gif-border {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease; }
+
+.project-details {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px 33px;
+  color: #fff; }
+  .project-details .project-title {
+    font-weight: 800;
+    padding-top: 5px;
+    font-size: 24px; }
+  .project-details .project-desc {
+    color: #c5c5c5;
+    font-weight: 400; }
+  .project-details .project-link {
+    margin-bottom: 50px;
+    font-weight: 600; }
+
+.custom-text {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 28px; }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -40,7 +111,9 @@
 
 .main-title {
   font-family: "Libre Barcode 39 Text", cursive;
-  font-size: 40px; }
+  font-size: 60px; }
+  .main-title.about {
+    font-size: 40px; }
 
 @-webkit-keyframes hue {
   from {
@@ -87,7 +160,8 @@ header .overlay {
 .nameLogo {
   font-size: 18px;
   text-align: left;
-  margin-left: 50px; }
+  margin-left: 25px;
+  margin-right: 20px; }
   .nameLogo .fname {
     font-weight: 700;
     color: #0077ff;
@@ -156,39 +230,25 @@ header .overlay {
   left: 0;
   font-size: 14px; }
 
-.navigational {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  color: #fff;
-  top: 50px; }
-
-.nav-links {
-  font-weight: 700;
-  padding-right: 50px !important;
-  text-align: right; }
-  .nav-links span {
-    margin-left: 15px; }
-    .nav-links span:hover {
-      cursor: pointer; }
-
-.about-text {
-  position: absolute;
-  margin-top: -220px; }
+h1.cool-line {
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 50px;
+  text-decoration: line-through;
+  text-decoration-color: #0077ff; }
 
 .barcode {
   margin: 0 auto; }
 
 .about-me {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
-  max-width: 800px;
   margin: 0 auto; }
   .about-me p {
     font-weight: 400; }
   .about-me h1 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 900;
     font-style: italic;
     color: #2396f1; }
@@ -196,7 +256,7 @@ header .overlay {
     font-size: 16px;
     font-weight: 900;
     font-style: italic;
-    color: #04bad2; }
+    color: #2396f1; }
   .about-me.hide {
     display: none; }
   .about-me .cert-title {
@@ -312,7 +372,8 @@ header .overlay {
   left: 40px;
   bottom: 25px;
   transform: rotate(-90deg);
-  transform-origin: left top 0; }
+  transform-origin: left top 0;
+  z-index: 99; }
   .linkedin a {
     color: white;
     text-decoration: none;
@@ -419,7 +480,10 @@ header .overlay {
   .main-title {
     font-size: 20px; }
   .barcode.active-about-mobile {
-    margin-bottom: -245px; } }
+    margin-bottom: -245px; }
+  .nameLogo {
+    text-align: center;
+    text-decoration: line-through; } }
 
 @media (min-width: 576px) and (max-width: 768px) {
   .active-nilima span {
