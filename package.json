@@ -1,5 +1,5 @@
 {
-  "homepage": "https://suazod.github.io",
+  "homepage": "https://suazod.github.io/danny-suazo-portfolio",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -44,7 +44,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.49.10",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "sass": "^1.49.10"
   }
 }
